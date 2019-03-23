@@ -42,13 +42,27 @@ public class App
         tab5[0] = new int[3];
         tab5[0] = new int[5];
 
-        for (int i = 0; i < (tab04.length); i++) {
+        for (int i = 0; i < tab04.length; i++) {
             int[] innerTable = tab04[i];
             int innerLength = innerTable.length;
             for (int j =0; j < innerLength; j++){
                 System.out.print(innerTable[j] + ", ");
             }
             System.out.print("\n");
+        }
+
+        int i = 0;
+        while (i < tab04.length){
+            int[] innerTable = tab04[i];
+            int innerLength = innerTable.length;
+
+            int j = 0;
+            while ( j < innerLength){
+                System.out.print(innerTable[j] + ", ");
+                j++;
+            }
+            System.out.print("\n");
+            i++;
         }
 
     }
