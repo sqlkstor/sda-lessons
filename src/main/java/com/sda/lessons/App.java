@@ -65,5 +65,17 @@ public class App
             i++;
         }
 
+        int result = sum(1,2,3,4,5,6);
+        System.out.println("Wynik sumy: " + result);
+
+    }
+
+    public static int sum(int ...elements){
+        int addedNum = 0;
+
+        for (int i = 0; i < elements.length; i++){
+            addedNum += elements[i];
+        }
+        return addedNum;
     }
 }
